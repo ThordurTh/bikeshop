@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(240, 239, 233);
+}
+
+header {
+  font-family: "Libre Baskerville", serif;
+  text-transform: uppercase;
+  padding: 1.5rem;
+}
+
+.logo {
+  background-color: rgb(28, 21, 13);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.3rem 1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: "Signika Negative", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  padding: 1rem 0;
+}
+
+nav span:first-child {
+  color: rgb(99, 97, 96);
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(96, 35, 29);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 4rem;
+  padding: 1rem 2rem;
+}
+
+/* BIKE */
+.bike {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.bike img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  color: rgb(100, 100, 100);
+}
+
+.brand {
+  text-transform: uppercase;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.name {
+  font-family: "Libre Baskerville", serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(187, 186, 184);
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+}
+
+.info {
+  font-family: "Signika Negative", sans-serif;
+  border: 1px solid rgb(187, 186, 184);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1rem 0.7rem;
+  font-style: italic;
+  color: rgb(100, 100, 100);
+  font-size: 1.3rem;
+}
+
+.info > div {
+  border-bottom: 1px solid rgb(187, 186, 184);
+  padding-bottom: 0.3rem;
+}
+
+.info div span {
+  font-family: "Libre Baskerville", serif;
+  color: black;
+  padding-left: 1rem;
+}
+
+.colours {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+/*~~~~~~~~~~~~~~~~~~~~*/
+/*!!!!!!!!!!!!!!!!!!!!*/
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+.container {
+  position: relative;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 10px;
+  border-radius: 5px;
+}
+
+.red {
+  background-color: rgb(112, 16, 16);
+}
+
+.green {
+  background-color: rgb(17, 85, 17);
+}
+
+.blue {
+  background-color: rgb(124, 167, 231);
+}
+
+.yellow {
+  background-color: rgb(180, 168, 55);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 5px;
+  left: 5.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  background: white;
+}
+/*~~~~~~~~~~~~~~~~~~~~*/
+/*!!!!!!!!!!!!!!!!!!!!*/
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+.bike a {
+  border: 1px solid rgb(85, 27, 14);
+  align-self: center;
+  color: rgb(85, 27, 14);
+  font-style: normal;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+}

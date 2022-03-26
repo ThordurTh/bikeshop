@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Signika+Negative:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href=""> &#68340; Bike Stock &#68340;</a>
+      <nav>
+        <span>Brands we Carry -</span>
+        <a href="">Linus</a><span> / </span> <a href="">Brompton</a
+        ><span> / </span> <a href="">Christiania</a><span> / </span>
+        <a href="">State</a>
+      </nav>
+    </header>
+    <main>
+      <template>
+        <div class="bike">
+          <img src="images/warhawk.png" alt="" />
+          <div class="title">
+            <div class="brand">state</div>
+            <div class="name">warhawk</div>
+          </div>
+          <div class="info">
+            <div>Price - <span class="price"></span></div>
+            <div>
+              <div class="colours">
+                Colours -
+                <!-- <span class="colours"></span> -->
+                <label class="container">
+                  <input type="radio" checked="checked" name="radio" />
+                  <span class="checkmark red"></span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="radio" />
+                  <span class="checkmark blue"></span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="radio" />
+                  <span class="checkmark green"></span>
+                </label>
+                <label class="container">
+                  <input type="radio" name="radio" />
+                  <span class="checkmark yellow"></span>
+                </label>
+              </div>
+            </div>
+            <div>In Stock - <span class="inStock"></span></div>
+            <a href="#">FULL SPECS</a>
+          </div>
+          <!--INFO -->
+        </div>
+        <!--BIKE -->
+      </template>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
